@@ -3,10 +3,11 @@ import Navbar from './components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
 
 import Linku from './pages/Linku/Linku'
-import Porder from './pages/Porder/Porder'
+
 import Footer from './components/Footer/Footer'
 import LoginPopup from './components/LoginPopup/LoginPopup'
 import Cart from './pages/Cart/Cart'
+import Porder from './pages/Porder/Porder'
 
 
 
@@ -21,9 +22,10 @@ const App = () => {
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
           
-          <Route path='./order' element={<Porder />} />
+          
           <Route path='/' element={<Linku />} />
           <Route path='/cart'element={<Cart />}/>
+          <Route path='/order'element={<Porder />}/>
 
         </Routes>
 
